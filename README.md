@@ -1,111 +1,109 @@
-## 🐍 Snake Game
+# 🐍 Snake Game
 
-A classic Snake Game built using **HTML**, **CSS**, and **JavaScript** — no frameworks!
-Play using your keyboard or mobile touch controls. Responsive, animated, and customizable.
-
----
-
-### 🚀 Features
-
-* 🎮 Playable on **keyboard** (desktop) and **touch buttons** (mobile)
-* 🍎 Glowing food animation
-* 🐍 Snake grows when it eats
-* 💀 Game over if snake hits wall or itself
-* 💾 Score & High Score saved in browser
-* 🔄 Restart button with animated Bootstrap icon
-* ⚡ Smooth animations & responsive grid layout
-* 🎨 Fully styled with modern CSS (no Tailwind or Bootstrap)
+A responsive, visually enhanced **Snake Game** built with vanilla HTML, CSS, and JavaScript. The game includes score tracking, high score persistence via `localStorage`, keyboard and mobile touch controls, and a restart button UI overlay.
 
 ---
 
-### 📁 File Structure
+## 🎮 Live Demo
 
-```
-snake-game/
-├── index.html         # Game UI and structure
-├── style.css          # Modern CSS for game board and controls
-├── script.js          # Core logic for game movement, input, and collision
-└── assets/            # (Optional) Screenshots, icons, etc.
-```
+👉 **[Try the Game Live](https://kushagra0333.github.io/snake-game/)** (Replace with your hosted link if deployed)
 
 ---
 
-### 🧠 How It Works
+## ✨ Features
 
-* The **snake** is represented as an array of `{x, y}` positions.
-* It moves by adding a new head and removing the tail (unless it eats food).
-* Direction is controlled via keyboard or mobile buttons.
-* CSS Grid is used to layout the board.
-* `setInterval()` updates the game every 150ms.
-* Game resets when the player dies, and high score is stored in `localStorage`.
+* Responsive grid-based game board
+* Smooth animations with CSS transitions
+* Dynamic scoring and persistent high score using `localStorage`
+* Restart game button overlay on game over
+* Mobile-friendly controls with arrow buttons
+* Custom visuals for:
+
+  * Snake body and head with gradient styles
+  * Pulsing food animation
+* Game auto-starts on first movement input
 
 ---
 
-### 🧑‍💻 Technologies Used
+## 🛠️ Tech Stack
 
 * **HTML5**
-* **CSS3** (Grid, Flexbox, Animations)
-* **Vanilla JavaScript**
-* **Bootstrap Icons** (via CDN)
+* **CSS3**
+* **JavaScript (ES6+)**
+* **Bootstrap Icons** (for mobile arrow buttons)
 
 ---
 
-### 📱 Controls
+## 📱 Controls
 
-#### Desktop:
+### On Desktop (Keyboard):
 
-* `↑` `↓` `←` `→` keys to move the snake
+* `Arrow Up` → Move Up
+* `Arrow Down` → Move Down
+* `Arrow Left` → Move Left
+* `Arrow Right` → Move Right
 
-#### Mobile:
+### On Mobile:
 
-* On-screen directional buttons will appear on smaller screens
+Use the **on-screen arrow buttons** to control the snake.
 
 ---
 
-### ✅ To Run Locally
+## 🧠 How It Works
 
-1. Clone the repo:
+* The game uses a `19x19` CSS Grid to create the board.
+* Snake movement is handled with a JavaScript `setInterval()` loop running every 150ms.
+* Food appears randomly in any grid cell not occupied by the snake.
+* If the snake collides with the wall or itself, the game ends.
+* The `Score` and `High Score` are shown above the game board.
+* `High Score` is stored in the browser's local storage and persists between sessions.
+* A restart button (`↻`) appears in the center after game over.
+
+---
+
+## 🚀 Getting Started
+
+To run this game locally:
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/snake-game.git
+   cd snake-game
    ```
 
-2. Open `index.html` in your browser:
+2. Open the `index.html` file in your browser:
 
    ```bash
-   cd snake-game
    open index.html
    ```
 
----
-
-### 🛠 Customization Ideas
-
-* Add levels or speed increase over time
-* Add sound effects on eating and game over
-* Add a pause button
-* Use swipe gestures on mobile
+*No build tools or installation required.*
 
 ---
 
-### 👨‍🎓 Credits
+## 📂 Folder Structure
 
-Made with 💚 by \[Your Name]
-Inspired by the classic Nokia Snake Game
-Bootstrap Icons used under MIT license
-
----
-
-### 📃 License
-
-This project is licensed under the [MIT License](LICENSE).
+```
+snake-game/
+├── index.html     # Main HTML file with all CSS & JS inline
+└── README.md      # Project documentation
+```
 
 ---
 
-Let me know if you'd like:
+## 🎨 Customization Ideas
 
-* A markdown file (`README.md`) ready to download
-* GitHub deploy instructions
-* Or if you want to convert it into a React or PWA version
+* Add difficulty levels (speed changes)
+* Implement sound effects
+* Add pause/resume functionality
+* Change snake/food styles using themes
+* Support swipe gestures on mobile
 
-Let’s level it up! 🚀
+---
+
+## 🙌 Acknowledgements
+
+* Inspired by the classic **Nokia Snake Game**
+* Bootstrap Icons CDN used for mobile UI
+
