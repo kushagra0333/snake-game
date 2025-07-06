@@ -5,23 +5,6 @@ Play using your keyboard or mobile touch controls. Responsive, animated, and cus
 
 ---
 
-### 🔗 Live Demo
-
-[Click here to play the game](#)
-*(Replace `#` with your deployed game link once available)*
-
----
-
-### 📸 Screenshots
-
-| Desktop                                    | Mobile                                   |
-| ------------------------------------------ | ---------------------------------------- |
-| ![snake-desktop](assets/snake-desktop.png) | ![snake-mobile](assets/snake-mobile.png) |
-
-*(Optional: Add your own screenshots in `assets/` folder)*
-
----
-
 ### 🚀 Features
 
 * 🎮 Playable on **keyboard** (desktop) and **touch buttons** (mobile)
